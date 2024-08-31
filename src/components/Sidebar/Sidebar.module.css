@@ -1,0 +1,33 @@
+.aside {
+  width: 4.5vw;
+  min-width: 40px;
+  background-color: var(--light-bg);
+  color: white;
+  box-sizing: border-box;
+  position: fixed;
+  height: calc(100vh - 55px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.aside > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon {
+  transition: filter 0.3s ease;
+  height: 25px;
+  width: 25px;
+}
+
+.icon:hover {
+  filter: brightness(0) invert(1);
+}
+
+.selected {
+  border-left: 2px solid black;
+}
