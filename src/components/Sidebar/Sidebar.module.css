@@ -1,5 +1,5 @@
 .aside {
-  width: 4.5vw;
+  width: 3.5vw;
   min-width: 40px;
   background-color: var(--light-bg);
   color: white;
@@ -9,25 +9,35 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px;
 }
 
 .aside > div {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+}
+
+.aside > div > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25% 15%;
+  cursor: pointer;
+}
+
+.aside > div > a:hover {
+  background: var(--sidebar-hover-bg);
+}
+
+.aside > div > a:hover .icon {
+  filter: brightness(0) invert(1);
 }
 
 .icon {
   transition: filter 0.3s ease;
-  height: 25px;
-  width: 25px;
-}
-
-.icon:hover {
-  filter: brightness(0) invert(1);
+  height: 100%;
+  width: 100%;
 }
 
 .selected {
-  border-left: 2px solid black;
+  border-left: 2px solid var(--selected-tab);
 }
