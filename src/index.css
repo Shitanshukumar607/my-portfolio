@@ -2,6 +2,8 @@
   --very-dark-bg: #1e2022;
   --dark-bg: #1f2428;
   --light-bg: #24292e;
+  --selected-tab : #2aa0f5;
+  --sidebar-hover-bg:  #1f2428;
 }
 
 body {
